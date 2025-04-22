@@ -1,7 +1,12 @@
 /* Kenny Thach #200524650 - COMP 1054 CSS Winter 2025 */
 
 /* Adding normalize first before my own css */
-/* ---------- MY OWN CODE STARTS AT LINE 356 ------------- */
+
+/* Importing Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+/* ---------- MY OWN CODE STARTS AT LINE 363 ------------- */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -357,10 +362,47 @@ template {
 
 /* ---------------- BEGINNING OF MY OWN CODE -------------------- */
 
+html {
+    /* Change the background color to beige */
+    background-color: beige;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* Can be set from 100 to 900 */
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+
+}
+
+/* Make the h1 look nicer */
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 350;
+    border: 3px solid black;
+    padding: 7px;
+    margin: 0 5px;
+}
+
+/* Hide the skip to main content button and the big ass stars */
+.skip-link {
+    visibility: hidden;
+}
+.link-github {
+    visibility: hidden;
+}
+
+
 /* Small Screen Layout */
 @media only screen and (max-width: 768px) {
     /* Testing it works */
     /* html {
         background-color: black;
     } */
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 769px) {
 }
