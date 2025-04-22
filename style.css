@@ -376,19 +376,36 @@ body {
 
 }
 
+header {
+    margin-top: 10px;
+}
+
 /* Make the h1 look nicer */
 h1 {
     text-align: center;
     font-size: 4rem;
     font-weight: 350;
     border: 3px solid black;
-    padding: 7px;
-    margin: 0 5px;
+    padding: 15px;
+    margin: 0 15px;
 }
 
 /* Hide the skip to main content button and the big ass stars */
 .skip-link {
     visibility: hidden;
+    /* Remove the ugly ass blue text and underline */
+    text-decoration: none;
+    color: inherit;
+    /* border: 2px solid grey; */
+    padding: 2px;
+    /* Visibility on top of other elements */
+    z-index: 1000;
+    /* Positioning */
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    /* Box around it */
+    border: 2px dashed grey;
 }
 .link-github {
     visibility: hidden;
@@ -401,6 +418,10 @@ h1 {
     /* html {
         background-color: black;
     } */
+    /* Place the skip to main content button in the top right */
+    .skip-link {
+        visibility: visible;
+    }
 }
 
 /* Desktop Layout */
